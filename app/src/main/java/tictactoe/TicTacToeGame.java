@@ -6,11 +6,12 @@ public class TicTacToeGame {
     private char currentPlayer;
     private Scanner scanner;
 
-    public TicTacToeGame() {
+    public TicTacToeGame(Scanner scanner) {
         board = new GameBoard();
         currentPlayer = 'X';
-        scanner = new Scanner(System.in);
+        this.scanner = scanner;
     }
+    
 
     public void play() {
         boolean playAgain;
@@ -48,7 +49,7 @@ public class TicTacToeGame {
         scanner.close();
     }
 
-    private int getValidMove() {
+    int getValidMove() {
         while (true) {
             String input = scanner.nextLine().trim();
             if (!input.matches("[1-9]")) {

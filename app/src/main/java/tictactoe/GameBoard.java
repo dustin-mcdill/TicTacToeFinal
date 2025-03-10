@@ -17,6 +17,10 @@ public class GameBoard {
         }
     }
 
+    public char[][] getBoard() {
+        return board;
+    }
+    
     public void printBoard() {
         System.out.println();
         for (int i = 0; i < 3; i++) {
