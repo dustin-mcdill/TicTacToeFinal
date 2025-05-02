@@ -1,7 +1,4 @@
-//added test for the game board
-
 package tictactoe;
-
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
