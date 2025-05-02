@@ -6,7 +6,7 @@ public class TicTacToeGame {
     private char currentPlayer;
     private Scanner scanner;
     private GameLog log;
-    private GameMode mode;//added game mode
+    private GameMode mode;//added game mode select
     private ComputerPlayer computer;//added ai player
 
     public TicTacToeGame(Scanner scanner) {
